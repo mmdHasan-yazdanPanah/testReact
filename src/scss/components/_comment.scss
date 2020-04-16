@@ -1,0 +1,20 @@
+.comment {
+    &__item {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: minmax(2.1rem, auto) 1fr;
+        column-gap: map-get($map: $spacers, $key: 2);
+
+        //padding-left: map-get($map: $spacers, $key: 3);
+    }
+
+    &__author {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+
+    &__context {
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+    }
+}

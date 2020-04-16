@@ -1,0 +1,22 @@
+.carousel {
+    &__btn {
+        &--1 {
+            * {
+                color: $light;
+                transition: ease 0.2s;
+            }
+            &:hover {
+                * {
+                    color: $dark;
+                }
+            }
+        }
+
+        &--disable {
+            pointer-events: none;
+            * {
+                color: rgba($light, 0.5);
+            }
+        }
+    }
+}

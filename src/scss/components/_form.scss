@@ -1,0 +1,33 @@
+.input {
+    &__parent {
+        position: relative;
+    }
+
+    &__input {
+        padding-right: 2.2rem !important;
+    }
+}
+
+textarea {
+    ~ .input__placeholder {
+        position: absolute;
+        top: 1.3rem;
+        right: 0.5rem;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        color: #acacac;
+    }
+}
+
+input {
+    ~ .input__placeholder {
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        color: #acacac;
+    }
+}

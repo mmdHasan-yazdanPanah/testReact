@@ -1,0 +1,38 @@
+.iconed-badge-box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .iconed-badge:not(:last-child) {
+        margin-left: .5rem;
+    }
+}
+
+.iconed-badge {
+    align-items: center;
+    border-radius: .6rem;
+    box-shadow: $box-shadow-sm !important;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    padding-left: .8rem;
+    padding-right: .8rem;
+
+    &__icon-box {
+        align-items: center;
+        background-color: $info;
+        border-radius: 50%;
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        justify-content: center;
+        margin-left: .4rem;
+    }
+
+    &__icon {
+        color: $gray-500;
+        @include font-size($h5-font-size);
+    }
+}

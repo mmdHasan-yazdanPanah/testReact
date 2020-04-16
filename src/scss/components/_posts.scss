@@ -1,0 +1,28 @@
+.post {
+    &:hover &__info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &__info {
+        background-color: rgba(#000000, 0.5);
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        height: 2.5rem;
+        z-index: 100;
+        width: 100%;
+        color: $light;
+        justify-content: space-between;
+        padding: 0 map-get($map: $spacers, $key: 2);
+        align-items: center;
+        font-size: 0.7rem;
+        opacity: 0;
+        transition: all ease 0.3s;
+        transform: translateY(-48%);
+    }
+
+    &__icon {
+        margin-right: 4px;
+    }
+}

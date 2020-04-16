@@ -1,0 +1,93 @@
+.chip-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.chip {
+    display: flex;
+    background-color: white;
+    color: $gray-800;
+    height: 2.6rem;
+    justify-content: center;
+    border-radius: .6rem;
+    align-items: center;
+    padding: .4rem .8rem;
+    width: fit-content;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16) !important;
+    transition: all .3s;
+    margin-bottom: .6rem;
+
+    &:not(:last-child) {
+        margin-left: .8rem;
+    }
+
+    &__close-icon {
+        font-size: 1.25rem;
+        margin-right: .4rem;
+        transition: all .3s;
+        color: $gray-800;
+        cursor: pointer;
+
+        &:hover {
+            color: darken($gray-800, 3);
+        }
+
+        &:active {
+            color: darken($gray-800, 5);
+        }
+
+        &--light {
+            color: white;
+
+            &:hover {
+                color: darken(white, 5);
+            }
+
+            &:active {
+                color: darken(white, 7);
+            }
+        }
+
+        &--blue {
+            color: $blue;
+
+            &:hover {
+                color: darken($blue, 5);
+            }
+
+            &:active {
+                color: darken($blue, 7);
+            }
+        }
+
+        &--orange {
+            color: $orange;
+
+            &:hover {
+                color: darken($orange, 5);
+            }
+
+            &:active {
+                color: darken($orange, 7);
+            }
+        }
+    }
+
+    &--rounded {
+        border-radius: 4rem;
+    }
+
+    &--blue {
+        background-color: $blue;
+        color: white;
+    }
+
+    &--orange {
+        background-color: $orange;
+        color: white;
+    }
+}

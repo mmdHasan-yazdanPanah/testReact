@@ -1,0 +1,28 @@
+.author {
+    &__img {
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__situation {
+        &--big {
+            border: 3.2px solid $light;
+            z-index: 120;
+            bottom: 1%;
+            right: 14%;
+        }
+
+        &--md {
+            border: 2px solid $light;
+            z-index: 120;
+            bottom: 2%;
+            right: 18%;
+        }
+
+        &--online {
+            background-color: $success;
+        }
+    }
+}

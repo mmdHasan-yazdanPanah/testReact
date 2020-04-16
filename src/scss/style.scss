@@ -1,0 +1,492 @@
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		4.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Dec 12, 2015
+*	Website:		http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت های ایران سن سریف یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*
+**/
+//$font-file-name: 'IRANSansWeb';
+$font-file-name: "IRANSansWeb(FaNum)";
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/eot/#{$font-file-name}_Bold.eot");
+    src: url("../fonts/eot/#{$font-file-name}_Bold.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/#{$font-file-name}_Bold.woff2")
+            format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+            url("../fonts/woff/#{$font-file-name}_Bold.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url("../fonts/ttf/#{$font-file-name}_Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/eot/#{$font-file-name}_Medium.eot");
+    src: url("../fonts/eot/#{$font-file-name}_Medium.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/#{$font-file-name}_Medium.woff2")
+            format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+            url("../fonts/woff/#{$font-file-name}_Medium.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url("../fonts/ttf/#{$font-file-name}_Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/eot/#{$font-file-name}_Light.eot");
+    src: url("../fonts/eot/#{$font-file-name}_Light.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/#{$font-file-name}_Light.woff2")
+            format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+            url("../fonts/woff/#{$font-file-name}_Light.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url("../fonts/ttf/#{$font-file-name}_Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/eot/#{$font-file-name}_UltraLight.eot");
+    src: url("../fonts/eot/#{$font-file-name}_UltraLight.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/#{$font-file-name}_UltraLight.woff2")
+            format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+            url("../fonts/woff/#{$font-file-name}_UltraLight.woff")
+            format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url("../fonts/ttf/#{$font-file-name}_UltraLight.ttf")
+            format("truetype");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/eot/#{$font-file-name}.eot");
+    src: url("../fonts/eot/#{$font-file-name}.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-8 */ url("../fonts/woff2/#{$font-file-name}.woff2")
+            format("woff2"),
+        /* FF39+,Chrome36+, Opera24+*/
+            url("../fonts/woff/#{$font-file-name}.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url("../fonts/ttf/#{$font-file-name}.ttf") format("truetype");
+}
+
+/////////////////////////////////////////////////////////////////
+
+// $border-radius: 0.5rem;
+
+///////////////////////////////////////////////////////////////
+$border-radius-sm: 4px;
+$border-radius: 7px;
+$border-radius-lg: 11px;
+
+$white: #fff;
+$orange: #ff9c2c;
+$blue: #0abee3;
+$green: #0ab269;
+$red: #e50000;
+$teal: #1dd1a1;
+
+$gray-200: #fcfcfc;
+$gray-300: #f8f8f8;
+$gray-400: #f5f5f5;
+$gray-500: #acacac;
+$gray-700: #707070;
+$gray-800: #757575;
+
+$warning: $orange;
+$secondary: $gray-200;
+$light: $white;
+$info: #f2f1f1;
+
+$font-family-base: IRANSans;
+
+$spacer: 1rem;
+$spacers: (
+    1: (
+        $spacer * 0.6,
+    ),
+    2: (
+        $spacer * 1,
+    ),
+    3: (
+        $spacer * 1.5,
+    ),
+    4: (
+        $spacer * 2.5,
+    ),
+    5: (
+        $spacer * 3.75,
+    ),
+);
+
+$box-shadow-sm: 0 1px 3px rgba(#000, 0.16);
+$box-shadow: 0 1px 6px rgba(#000, 0.16);
+
+$body-color: $gray-800;
+$body-bg: #f9f9f9;
+
+$link-color: $body-color;
+
+// $yiq-text-dark: $gray-800;
+
+$display2-size: 4.5rem;
+$display3-size: 1.2rem;
+$display4-size: 0.9rem;
+$h1-font-size: 3.1rem;
+$h2-font-size: 2.9rem;
+$h3-font-size: 1.9rem;
+$h1-font-weight: 400;
+
+$headings-font-weight: 300;
+$font-weight-normal: 400;
+$input-font-weight: 200;
+$headings-line-height: 1.5;
+
+$input-bg: $gray-200;
+
+$headings-margin-bottom: 0;
+
+$custom-checkbox-indicator-border-radius: $border-radius-sm;
+$custom-control-indicator-border-color: $gray-700;
+$custom-control-indicator-border-width: 2px;
+
+$container-max-widths: (
+    sm: 766px,
+    md: 890px,
+    lg: 988px,
+    xl: 1200px,
+);
+
+//////////////////////////////////// Changes for switch /////////////
+// $font-size-base: 1rem;
+// $font-size-lg: ($font-size-base * 1.25);
+// $font-size-sm: ($font-size-base * 0.875);
+// $input-height: 2.375rem;
+// $input-height-sm: 1.9375rem;
+// $input-height-lg: 3rem;
+// $input-btn-focus-width: 0.2rem;
+$custom-control-indicator-bg: $info;
+$custom-control-indicator-disabled-bg: #e9ecef;
+$custom-control-description-disabled-color: #868e96;
+
+///////////////////////////////////////////////////////////////
+
+@import "abstract/reset-button";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "abstract/variables";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/custom-forms";
+
+@import "../node_modules/swiper/swiper.scss";
+@import "../node_modules/swiper/components/pagination/pagination.scss";
+@import "../node_modules/swiper/components/scrollbar/scrollbar.scss";
+
+@import "base/utilities";
+@import "base/base";
+
+@import "layout/sidebar";
+@import "layout/profile-nav";
+
+@import "pages/login";
+@import "pages/home";
+@import "pages/dashboard";
+@import "pages/blog";
+
+@import "components/counter";
+@import "components/hamburger";
+@import "components/circle";
+@import "components/outline-box";
+@import "components/icons";
+@import "components/badge-card";
+@import "components/chip";
+@import "components/scrollbar";
+@import "components/author";
+@import "components/advanced-badge";
+@import "components/advanced-button";
+@import "components/comment";
+@import "components/posts";
+@import "components/cahrt";
+@import "components/form";
+@import "components/chat";
+@import "components/slider";
+@import "components/switch";
+@import "components/mark";
+@import "components/specialBG";
+@import "components/iconed-badge";
+@import "components/carousel";
+@import "components/custom-alert";
+@import "components/credit";
+
+.btn-warning {
+    color: white !important;
+}
+
+/////////////////////////////////////////////////////////////
+//utilities
+.rounded-xlg {
+    border-radius: $rounded-xlg;
+}
+
+//base
+html {
+    @media only screen and (max-width: 992px) {
+        font-size: 93.75%;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 87.5%;
+    }
+    @media only screen and (max-width: 576px) {
+        font-size: 75%;
+    }
+}
+
+.container-fluid {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: #f6f4fc;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+//header
+.header {
+    min-height: 2.9rem;
+    //position: sticky;
+    //z-index: 1000;
+    //top: 3rem;
+
+    &__notifications-button {
+        padding: 0.275rem 0.75rem;
+
+        &::after {
+            content: none;
+        }
+    }
+}
+
+//footer
+.footer {
+    // height: 14rem;
+
+    &__logo {
+        width: 11rem;
+        height: 5rem;
+    }
+}
+
+#content {
+    transition: all 0.6s;
+    margin-right: 0;
+}
+
+#open_menu_button {
+    user-select: none;
+    i {
+        font-size: 1.3rem;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:active {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+}
+
+// sidebar
+
+//icons
+.icon {
+    &__title {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+
+    &__cross {
+        width: 1.2rem;
+        fill: currentColor;
+    }
+
+    &__plus {
+        &--lg {
+            width: 5rem;
+        }
+    }
+
+    &__noti {
+        &-num {
+            width: 0.9rem;
+            height: 0.9rem;
+            transform: translateX(-50%);
+            right: 0;
+            font-size: 0.7rem;
+            display: block;
+            top: 16%;
+        }
+    }
+}
+
+input[type="text"] {
+    height: 2.6rem;
+}
+
+//input file
+.upload {
+    &--lg {
+        height: 18rem;
+        // fill: currentColor;
+        cursor: pointer;
+        color: #acacac;
+        position: relative;
+        overflow: hidden;
+
+        &-imaged {
+            *:not(img) {
+                opacity: 0;
+                transition: all ease 0.15s;
+            }
+
+            &:hover {
+                *:not(img) {
+                    opacity: 1;
+                }
+            }
+        }
+
+        *:not(img) {
+            z-index: 20;
+        }
+
+        img {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &--sm {
+        color: #acacac;
+        border: 1px solid #f2f2f2;
+
+        i {
+            font-size: 4rem;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 0.7rem;
+
+            i {
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 0.6rem;
+
+            i {
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 0.8rem;
+
+            i {
+                font-size: 2.3rem;
+            }
+        }
+
+        // padding-top: 100%;
+        // height: 0;
+    }
+}
+
+//main
+.main {
+    &__button {
+        &--1 {
+            bottom: 1rem;
+        }
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@keyframes showMenu {
+    0% {
+        display: none !important;
+    }
+
+    1% {
+        opacity: 0;
+        transform: scale(0) translate(50%);
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: scale(1) translate(0%);
+    }
+}

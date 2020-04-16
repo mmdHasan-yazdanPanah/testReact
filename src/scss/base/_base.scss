@@ -1,0 +1,23 @@
+hr {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+select {
+    position: relative;
+
+    option:disabled {
+        color: $gray-500;
+    }
+}
+
+p {
+    line-height: 1.9;
+}
+
+a[href] {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}

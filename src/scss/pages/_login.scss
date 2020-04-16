@@ -1,0 +1,58 @@
+.login {
+    background-color: $bg-login;
+    direction: rtl;
+    float: left;
+    min-width: 100vw;
+
+    &__parent {
+        min-height: 100vh;
+        float: left;
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+            min-height: auto;
+        }
+    }
+
+    &__bg-image {
+        position: absolute;
+        bottom: -10vh;
+        width: 100%;
+        min-height: 50vh;
+        object-fit: cover;
+
+        @include media-breakpoint-down(md) {
+            min-height: 70vh;
+        }
+    }
+
+    &__hr {
+        border-width: 3px;
+        border-color: #bebebe;
+    }
+
+    &__input-box {
+        position: relative;
+    }
+
+    &__input {
+        box-shadow: none;
+        background-color: $bg-login-input;
+        border-radius: 4px;
+        width: 100%;
+        text-align: left;
+        padding-left: 3rem;
+        direction: ltr;
+
+        &:focus {
+            background-color: $bg-login-input;
+        }
+    }
+
+    &__input-icon {
+        position: absolute;
+        top: 50%;
+        left: 1.4rem;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}

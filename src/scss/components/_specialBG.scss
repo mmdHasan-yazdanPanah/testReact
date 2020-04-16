@@ -1,0 +1,10 @@
+.specialBG {
+    &__clock-group {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        height: 160%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}

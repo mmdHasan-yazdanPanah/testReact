@@ -1,0 +1,412 @@
+.aspect-ratio-box {
+    height: 0;
+    overflow: hidden;
+    padding-top: 100%;
+    position: relative;
+}
+
+.aspect-ratio-box-inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.w-init {
+    width: initial;
+}
+
+.top-num-padding {
+    padding-top: 2px;
+}
+
+@for $i from 1 through 100 {
+    .height-#{$i} {
+        height: #{$i / 2}rem !important;
+    }
+
+    $i: $i + 1;
+}
+
+@for $i from 1 through 100 {
+    .min-height-#{$i} {
+        min-height: #{$i / 2}rem !important;
+    }
+
+    $i: $i + 1;
+}
+
+@for $i from 1 through 100 {
+    .max-height-#{$i} {
+        max-height: #{$i / 2}rem !important;
+    }
+
+    $i: $i + 1;
+}
+
+@for $i from 1 through 100 {
+    .width-#{$i} {
+        width: #{$i / 2}rem !important;
+    }
+
+    $i: $i + 1;
+}
+
+@for $i from 1 through 100 {
+    .min-width-#{$i} {
+        min-width: #{$i / 2}rem !important;
+    }
+
+    $i: $i + 1;
+}
+
+@for $i from 1 through 100 {
+    .max-width-#{$i} {
+        max-width: #{$i / 2}rem !important;
+    }
+
+    $i: $i + 1;
+}
+
+.text-dark-success {
+    color: $teal;
+}
+
+.text-success-main {
+    color: $green-main;
+}
+
+.height-05 {
+    height: 4px;
+}
+
+.bg-color-transparent {
+    background-color: rgba(white, 0.2);
+}
+
+.bg-warning-light {
+    background-color: $orange-light;
+}
+
+.py-05 {
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+}
+
+.px-05 {
+    padding-right: 0.45rem;
+    padding-left: 0.45rem;
+}
+
+.mr-05 {
+    margin-right: 0.35rem !important;
+}
+
+.mr-1-5 {
+    margin-right: 0.8rem !important;
+}
+
+.ml-05 {
+    margin-left: 0.35rem !important;
+}
+
+.ml--05 {
+    margin-left: -0.35rem !important;
+}
+
+.ml-1-5 {
+    margin-left: 0.8rem !important;
+}
+
+.mb-05 {
+    margin-bottom: 0.25rem !important;
+}
+
+.mt {
+    &-05 {
+        margin-top: 0.35rem !important;
+    }
+
+    &-sm {
+        &-05 {
+            @include media-breakpoint-up(sm) {
+                margin-top: 0.35rem !important;
+            }
+        }
+    }
+}
+
+.direction-ltr {
+    direction: ltr !important;
+}
+
+.direction-rtl {
+    direction: rtl !important;
+}
+
+.font-small {
+    font-size: 0.8rem;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.bottom-0 {
+    right: 0;
+}
+
+.filled-width__lock {
+    background-image: url(../../images/Group-lock.svg);
+    background-size: cover;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+.z-index-120 {
+    z-index: 120;
+}
+
+.placeholder {
+    &--white {
+        &::placeholder {
+            color: rgba(white, 0.9);
+        }
+    }
+}
+
+.text-gray {
+    color: $gray-500;
+}
+
+.bg-gray {
+    background-color: $gray-300;
+}
+
+.border-3 {
+    border: 3px solid;
+}
+
+.border-4 {
+    border: 4px solid;
+}
+
+.translateX-50 {
+    transform: translateX(50%);
+}
+
+.centered-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@for $i from 0 through 360 {
+    @if ($i % 5 == 0) {
+        .rotate-#{$i} {
+            transform: rotate(#{$i}deg);
+        }
+    }
+}
+
+@for $i from 1 through 360 {
+    @if ($i % 5 == 0) {
+        .rotate-minus-#{$i} {
+            transform: rotate(-#{$i}deg);
+        }
+    }
+}
+
+.direction-ltr {
+    direction: rtl;
+}
+
+.position-right-center {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.position-bottom-center {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.bg-primary-light {
+    background-color: $blue-light;
+}
+
+.py-05 {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.vl {
+    border-left: 2px solid #e8e8e8;
+}
+
+.size-10-responsive {
+    width: 5rem;
+    height: 5rem;
+
+    // @include media-breakpoint-down(sm) {
+    // }
+}
+
+.reset {
+    &-ul {
+        list-style: disc;
+        padding-inline-start: 1.25rem;
+
+        li:not(:last-child) {
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+.height-7-responsive {
+    height: 3.5rem;
+
+    @include media-breakpoint-down(lg) {
+        height: auto;
+        min-height: 5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.text-rubby {
+    color: #d32f2f !important;
+}
+
+.text-enchance {
+    color: #5cd91b !important;
+}
+
+.text-diamond {
+    color: #62b1c6 !important;
+}
+
+.bg-diamond {
+    background-color: #62b1c6 !important;
+}
+
+.text-mid-line {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: $body-color;
+    }
+}
+
+.bg-success-light {
+    background-color: $green-light;
+}
+
+.vertical-separator {
+    background-color: rgba(black, 0.2);
+    width: 1px;
+}
+
+.fade-in-on-hover {
+    opacity: 0.95;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.text-hover-warning {
+    &:hover,
+    &:hover * {
+        color: $warning !important;
+    }
+}
+
+.text-hover-primary {
+    &:hover,
+    &:hover * {
+        color: $primary !important;
+    }
+}
+
+.text-hover-secondary {
+    &:hover,
+    &:hover * {
+        color: $secondary !important;
+    }
+}
+
+.text-hover-success {
+    &:hover,
+    &:hover * {
+        color: $success !important;
+    }
+}
+
+.outline-0 {
+    outline: 0 !important;
+}
+
+.center-manual {
+    margin-right: 50%;
+    transform: translateX(50%);
+}
+
+.pr {
+    &-xl {
+        &-down {
+            &-0 {
+                @include media-breakpoint-down(lg) {
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+
+    &-sm {
+        &-down {
+            &-0 {
+                @include media-breakpoint-down(sm) {
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.mr-md-down-0 {
+    @include media-breakpoint-down(md) {
+        margin-right: 0 !important;
+    }
+}

@@ -1,0 +1,56 @@
+.chat {
+    &__send-box {
+        border: 3px solid #ededf1;
+        color: #afafaf;
+        position: relative;
+
+        * {
+            color: #afafaf;
+        }
+    }
+
+    &__input {
+        border: 0;
+        outline: none;
+        z-index: 100;
+        position: relative;
+        background-color: transparent;
+        padding-right: 2.75rem;
+        padding-left: 5.6rem;
+        color: $body-color;
+
+        &::placeholder {
+            color: #afafaf;
+        }
+    }
+
+    &__icons-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__button {
+        z-index: 200;
+        transition: all ease 0.2s;
+
+        * {
+            transition: all ease 0.2s;
+        }
+
+        &:hover {
+            color: $body-color;
+
+            * {
+                color: $body-color;
+            }
+        }
+    }
+
+    &__badge {
+        min-height: 2.5rem;
+        max-width: 70%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+}

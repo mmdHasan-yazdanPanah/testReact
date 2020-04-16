@@ -1,0 +1,40 @@
+.slider {
+    &__img {
+        border: 1px solid $gray-700;
+    }
+
+    &__item {
+        width: 84%;
+    }
+
+    &__icon-prev {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4.5rem;
+        justify-content: center;
+        color: $primary;
+
+        &:hover {
+            color: darken($color: $primary, $amount: 20%);
+        }
+    }
+
+    &__icon-next {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4.5rem;
+        justify-content: center;
+
+        &:hover {
+            color: darken($color: $primary, $amount: 20%);
+        }
+    }
+}

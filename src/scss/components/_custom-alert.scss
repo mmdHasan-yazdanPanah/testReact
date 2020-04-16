@@ -1,0 +1,15 @@
+.customAlert {
+    &-warning {
+        background-color: rgba($color: $warning, $alpha: 0.3);
+        color: $orange-dark-2;
+        font-weight: $font-weight-light;
+        line-height: 1.9;
+    }
+
+    &-primary {
+        background-color: rgba($color: $primary, $alpha: 0.2);
+        color: darken($color: $primary, $amount: 20%);
+        font-weight: $font-weight-light;
+        line-height: 1.9;
+    }
+}

@@ -1,0 +1,15 @@
+.counter {
+    &__item {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__num {
+        font-weight: 500;
+        padding-top: 0.3rem;
+    }
+
+    &__info {
+        padding: 0.2rem 0;
+    }
+}

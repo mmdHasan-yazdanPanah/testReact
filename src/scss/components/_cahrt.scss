@@ -1,0 +1,50 @@
+.chart {
+    width: 0.5rem;
+    height: 7rem;
+    background-color: $gray-400;
+    position: relative;
+    display: block;
+
+    &--sm {
+        width: 0.4rem;
+        height: 7rem;
+        background-color: $gray-400;
+        position: relative;
+        display: block;
+    }
+
+    &__bar {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+
+        &--warning {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $warning;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+    }
+
+    &--horizontal {
+        height: 0.5rem;
+        background-color: #dfdfdf;
+        position: relative;
+        display: block;
+
+        &__bar {
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: $primary;
+        }
+    }
+}
