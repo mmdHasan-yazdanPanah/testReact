@@ -232,16 +232,24 @@ function App() {
     });
 
     useEffect(() => {
-        axios.get("jsons/user.json/persons").then((response) => {
-            console.log(response);
+        axios.get(`http://localhost:3001/${userName}`).then((response) => {
+            setNotificationNum(response.data.notification);
         });
     }, []);
 
     return (
-        <div style={{ direction: "rtl", overflow: "hidden" }}>
-            <Header userName="Alireza" notificationNum="5" />
+        <div>
+            <Header
+                userName={userName.charAt(0).toUpperCase() + userName.slice(1)}
+                notificationNum={notificationNum}
+            />
             <div className="row no-gutters px-2">
-                <Sidebar img={userImg} />
+                <Sidebar
+                    img={userImg}
+                    userName={
+                        userName.charAt(0).toUpperCase() + userName.slice(1)
+                    }
+                />
 
                 <main
                     className="col bg-light position-relative rounded-lg mr-md-2 mr-lg-2 mt-lg-0"
@@ -265,22 +273,9 @@ function App() {
                                 </HeadIcon>
 
                                 <InputOrderedCrossed
-                                    placeholders={[
-                                        "توضیحات پروژه خود را بنویسید...",
-                                        "توضیحات پروژه خود را بنویسید...",
-                                        "توضیحات پروژه خود را بنویسید...",
-                                    ]}
+                                    placeholder="توضیحات پروژه خود را بنویسید..."
+                                    num={3}
                                 />
-
-                                <BtnWIcon
-                                    key="btn1"
-                                    small
-                                    className="mt-3 float-left"
-                                    iconClass={"contract"}
-                                    color={"warning"}
-                                >
-                                    افزودن ویژگی جدید
-                                </BtnWIcon>
 
                                 <BtnWIcon
                                     key="btn2"

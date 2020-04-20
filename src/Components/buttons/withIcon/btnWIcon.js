@@ -4,6 +4,7 @@ const btnWIcon = (props) => {
     if (props.small) {
         return (
             <button
+                onClick={props.onClick}
                 type="button"
                 className={`btn btn-${
                     props.color ? props.color : "primary"

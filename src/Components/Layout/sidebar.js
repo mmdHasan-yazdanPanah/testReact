@@ -20,7 +20,7 @@ const sidebar = (props) => {
                             />
                             <span className="side__author--online"></span>
                         </div>
-                        <span className="mt-2 display-3">Mr.Padokar</span>
+                        <span className="mt-2 display-3">{props.userName}</span>
                     </div>
                     <ul className="d-flex flex-column side__menu text-body">
                         <li className="mt-4 side__sub-par">
@@ -143,7 +143,7 @@ const sidebar = (props) => {
                                     <span className="side__author--online"></span>
                                 </div>
                                 <span className="mt-2 display-3">
-                                    Mr.Padokar
+                                    {props.userName}
                                 </span>
                             </div>
                         </div>
