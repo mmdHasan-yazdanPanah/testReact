@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import $ from "jquery";
-import useScript from "../Auxilary/useScript";
 import axios from "axios";
 
 import Header from "../Components/Layout/header";
@@ -303,18 +302,6 @@ function App() {
                     </form>
                 </main>
             </div>
-
-            {useScript("https://code.jquery.com/jquery-3.4.1.slim.min.js")}
-
-            {
-                (useScript(
-                    "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                ),
-                useScript(
-                    "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                ),
-                useScript("../js/app"))
-            }
         </div>
     );
 }

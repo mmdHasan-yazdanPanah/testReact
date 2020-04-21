@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+    Dropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+} from "reactstrap";
 
-const header = (props) => {
+const Header = (props) => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggle = () => setDropdownOpen((prevState) => !prevState);
+
     const modalMenu = () => {
         const pageWidth = window.innerWidth;
 
@@ -75,13 +85,12 @@ const header = (props) => {
                             </span>
                         </div>
                     </button>
-                    <div className="dropdown">
-                        <button
-                            className="btn btn-primary text-light position-relative dropdown-toggle header__notifications-button"
-                            id="notifications_button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
+
+                    <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                        <DropdownToggle
+                            caret
+                            color="primary"
+                            className="position-relative header__notifications-button"
                         >
                             <i className="icon-packard-bell h4 text-light"></i>
                             <span
@@ -90,22 +99,14 @@ const header = (props) => {
                             >
                                 {props.notificationNum}
                             </span>
-                        </button>
-                        <div
-                            className="dropdown-menu"
-                            aria-labelledby="notifications_button"
-                        >
-                            <a href="#/" className="dropdown-item">
-                                Action
-                            </a>
-                            <a href="#/" className="dropdown-item">
-                                Another action
-                            </a>
-                            <a href="#/" className="dropdown-item">
-                                Something else here
-                            </a>
-                        </div>
-                    </div>
+                        </DropdownToggle>
+                        <DropdownMenu>
+                            <DropdownItem>Another Action</DropdownItem>
+                            <DropdownItem>Another Action</DropdownItem>
+                            <DropdownItem>Another Action</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+
                     <button className="btn mr-2 d-flex align-items-center text-light">
                         <span className="h6 ml-1 mb-0">{props.userName}</span>
                         <i
@@ -114,10 +115,9 @@ const header = (props) => {
                         ></i>
                     </button>
                 </div>
-                <div className=""></div>
             </div>
         </div>
     );
 };
 
-export default header;
+export default Header;
