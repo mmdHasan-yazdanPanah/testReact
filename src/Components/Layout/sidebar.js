@@ -1,15 +1,20 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { Collapse } from "reactstrap";
 
 const Sidebar = (props) => {
     const [CollapseisOpen, setCollapseisOpen] = useState([false, false]);
 
-    const toggleCollapse = (index) => {
-        let newCollpase = [...CollapseisOpen];
-        newCollpase[index] = !newCollpase[index];
-        setCollapseisOpen(newCollpase);
-    };
+    // const toggleCollapse = (index) => {
+    //     let newCollpase = [...CollapseisOpen];
+    //     newCollpase[index] = !newCollpase[index];
+    //     setCollapseisOpen(newCollpase);
+    // };
+=======
+import React from "react";
+>>>>>>> parent of 0bbdc88... sidebar Finished
 
+const sidebar = (props) => {
     return (
         <React.Fragment>
             <div className="side col-3 d-none d-md-block" id="sidebar">
@@ -33,18 +38,19 @@ const Sidebar = (props) => {
                     </div>
                     <ul className="d-flex flex-column side__menu text-body">
                         <li className="mt-4 side__sub-par">
-                            <button
+                            <a
+                                href="#side-sub1"
                                 className="d-flex align-items-center text-decoration-none text-body"
-                                onClick={() => toggleCollapse(0)}
+                                data-toggle="collapse"
                             >
                                 <i className="icon-window text-primary ml-2 h4"></i>
                                 ایجاد
-                            </button>
-                            <Collapse
-                                isOpen={CollapseisOpen[0]}
-                                className="side__sub-list mr-3"
+                            </a>
+                            <ul
+                                className="side__sub-list mt-3 mr-3 collapse"
+                                id="side-sub1"
                             >
-                                <li className="mb-1 mt-3 d-block">
+                                <li className="mb-1 d-block">
                                     <a
                                         href="#/"
                                         className="side__sub-item text-decoration-none"
@@ -71,7 +77,7 @@ const Sidebar = (props) => {
                                         ایجاد نمونه کار
                                     </a>
                                 </li>
-                            </Collapse>
+                            </ul>
                         </li>
                         <li className="mt-3">
                             <a
@@ -253,4 +259,4 @@ const Sidebar = (props) => {
     );
 };
 
-export default Sidebar;
+export default sidebar;
